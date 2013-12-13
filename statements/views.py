@@ -1,3 +1,6 @@
 from django.shortcuts import render
+from statements.models import Statement
 
-# Create your views here.
+def home(request):
+  context = {'name': 'Yosef'}
+  return render(request, 'index.html', context)
