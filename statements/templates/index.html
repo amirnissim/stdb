@@ -1,6 +1,23 @@
 {% extends "base.html" %}
 
-{% block body %}
-  שלום {{ name }}
-  <button type="button" class="btn btn-warning">Warning</button>
+{% block content %}
+  <div class="row">
+    <h1>הצהרות אחרונות</h1>
+  </div>
+
+  {% for statement in statements %}
+    <div class="row">
+      <blockquote>
+        {{ statement.quote }}
+        <small>{{ statement.pubfig.name }} על {{ statement.about }}, {{ statement.date }}
+        <cite>
+          {% if statement.source_url %}
+          <a href="{{ statement.source_url }}">{{ statement.source }}</a>
+          {% else %}
+          {{ statement.source }}
+          {% endif %}
+        </cite></small>
+      </blockquote>
+    </div>
+  {% endfor %}
 {% endblock %}
