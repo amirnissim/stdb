@@ -1,0 +1,20 @@
+[{
+  "pk": 1,
+  "model": "statements.pubfig",
+  "fields": {
+    "image_url": "https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-ash2/529888_533987486622924_1062371991_n.jpg",
+    "name": "נפתלי בנט"
+  }
+}, {
+  "pk": 1,
+  "model": "statements.statement",
+  "fields": {
+    "about": "זוגות חד מיניים",
+    "quote": "אנחנו תומכים לתת את ההטבות עליהן מדבר החוק עד השקל האחרון",
+    "source_url": "https://www.facebook.com/photo.php?fbid=666696070018731&set=a.396861670335507.89917.396697410351933&type=1",
+    "source": "פייסבוק",
+    "context": "פייסבוק",
+    "date": "2013-12-11",
+    "pubfig": 1
+  }
+}]
